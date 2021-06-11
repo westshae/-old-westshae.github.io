@@ -1,4 +1,5 @@
 {
+  "homepage": "http://westshae.github.io",
   "name": "comaltoya",
   "version": "0.1.0",
   "private": true,
@@ -18,7 +19,9 @@
     "start": "DISABLE_ESLINT_PLUGIN=true react-scripts start",
     "build": "DISABLE_ESLINT_PLUGIN=true react-scripts build",
     "test": "DISABLE_ESLINT_PLUGIN=true react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
