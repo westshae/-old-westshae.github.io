@@ -1,7 +1,9 @@
-import styled, {css} from "styled-components";
-import React from "react"
+//Module imports
+import React from "react";
+import styled from "styled-components"
 
-
+//Text imports
+import BlogList from "../assets/shelf/blogList"
 
 const CardStyle = styled.div`
     margin:0.5%;
@@ -9,8 +11,6 @@ const CardStyle = styled.div`
     background-color:#1e2230;
     border-radius:2px;
     display:grid;
-    :active{
-    }
     :hover{
         transition-delay:0.5s;
         background-color:#1b1d25;
@@ -20,10 +20,6 @@ const CardStyle = styled.div`
         -ms-transition: background-color 0.2s ease-out;
         transition: background-color 0.2s ease-out;
     }
-    ${props => props.hide && css`
-
-    `};
-    
 `;
 
 const Header = styled.a`
@@ -51,17 +47,31 @@ const Description = styled.p`
     padding-right:6%;
 `;
 
-
-function IndividualCard(props){
-
+function Card(props){
     return (
         <CardStyle>
             <Header href={props.link} target="_blank">{props.title}</Header>
             <Description>{props.readtime}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{props.date}</Description>
-
         </CardStyle>
     )
-    
 }
 
-export default IndividualCard;
+const Container = styled.div`
+    background-color:#272C3D;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    grid-row-gap:0.5%;
+    padding-bottom:1%;
+`
+
+function Grid(){
+    return(
+        <Container>
+            {BlogList.map((p, i)=>(
+                <Card title={p.title} date={p.date} readtime={p.readtime} link={p.link}/>
+            ))}
+        </Container>
+    )
+}
+
+export default Grid;

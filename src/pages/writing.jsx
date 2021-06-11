@@ -4,7 +4,7 @@ import React from "react";
 import Container from "../components/Container"
 import Navigation from "../components/Navigation"
 import Content from "../components/Content"
-import BlogGrid from "../components/BlogGrid"
+import Blog from "../components/Blog"
 import {Header} from "../components/TextStyles"
 
 
@@ -15,7 +15,7 @@ const Writing = () => {
             <Navigation page="writing"/>
             <Content>
                 <Header/>
-                <BlogGrid/>
+                <Blog/>
             </Content>
         </Container>
     );
