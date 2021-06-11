@@ -4,8 +4,8 @@ import React from "react";
 import Container from "../components/Container"
 import Navigation from "../components/Navigation"
 import Content from "../components/Content"
-import CardGrid from "../components/CardGrid"
 import {Paragraph, Header} from "../components/TextStyles"
+import Projects from "../components/Projects"
 
 //Text imports
 import portfolioText from "../assets/shelf/portfolioText"
@@ -19,8 +19,7 @@ const Programming = () => {
             <Content>
                 <Header>{portfolioText.header}</Header>
                 <Paragraph>{portfolioText.paragraph1}</Paragraph>
-                <Paragraph/>
-                <CardGrid/>
+                <Projects/>
             </Content>
         </Container>
     );

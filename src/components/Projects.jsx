@@ -1,8 +1,8 @@
+import styled from "styled-components";
 import React from "react";
 
 //Component imports
 import IndividualCard from "./PortfolioCard"
-import CardContainer from "./CardContainer"
 import {Paragraph} from "./TextStyles"
 
 //Text imports for projects
@@ -17,10 +17,18 @@ import soundmanipulation from "../assets/shelf/Projects/soundmanipulation"
 import objectremoval from "../assets/shelf/Projects/objectremoval"
 
 
-function CardGrid(){
+const Container = styled.div`
+    background-color:#272C3D;
+    height:100%;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    grid-row-gap:0.5%;
+`
+
+function Projects(){
     return(
         <div>
-            <CardContainer>
+            <Container>
                 <IndividualCard header={comaltoya.header} description={comaltoya.description} link={comaltoya.link} react css html javascript/>
                 <IndividualCard header={objectremoval.header} description={objectremoval.description} link={objectremoval.link} cpp github linux vscode/> 
                 <IndividualCard header={pythoncalculator.header} description={pythoncalculator.description} link={pythoncalculator.link} python vscode github/>
@@ -30,10 +38,10 @@ function CardGrid(){
                 <IndividualCard header={soundmanipulation.header} description={soundmanipulation.description} link={soundmanipulation.link} cpp github linux vscode/>
                 <IndividualCard header={javacalculator.header} description={javacalculator.description} link={javacalculator.link} java intellij github/>
                 <IndividualCard header={playerevents.header} description={playerevents.description} link={playerevents.link} java intellij github/>
-            </CardContainer>
+            </Container>
             <Paragraph/>
         </div>
     )
 }
 
-export default CardGrid;
+export default Projects;
