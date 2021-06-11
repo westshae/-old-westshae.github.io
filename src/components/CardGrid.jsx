@@ -3,8 +3,7 @@ import React from "react";
 //Component imports
 import IndividualCard from "./PortfolioCard"
 import CardContainer from "./CardContainer"
-import Paragraph from "./Paragraph"
-import HorLine from "./HorLine"
+import {Paragraph} from "./TextStyles"
 
 //Text imports for projects
 import comaltoya from "../assets/shelf/Projects/comaltoya"

@@ -5,7 +5,7 @@ import Container from "../components/Container"
 import Navigation from "../components/Navigation"
 import Content from "../components/Content"
 import BlogGrid from "../components/BlogGrid"
-import Header from "../components/Header"
+import {Header} from "../components/TextStyles"
 
 
 

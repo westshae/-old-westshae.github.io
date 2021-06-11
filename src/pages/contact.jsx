@@ -7,7 +7,7 @@ import pfp from "../assets/images/misc/pfp.jpg"
 import Container from "../components/Container"
 import Navigation from "../components/Navigation"
 import Content from "../components/Content"
-import Header from "../components/Header"
+import {Header} from "../components/TextStyles"
 import {UL, LI} from "../components/List"
 
 const ContactContainer = styled.div`

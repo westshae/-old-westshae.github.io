@@ -5,8 +5,7 @@ import Container from "../components/Container"
 import Navigation from "../components/Navigation"
 import Content from "../components/Content"
 import CardGrid from "../components/CardGrid"
-import Paragraph from "../components/Paragraph"
-import Header from "../components/Header"
+import {Paragraph, Header} from "../components/TextStyles"
 
 //Text imports
 import portfolioText from "../assets/shelf/portfolioText"

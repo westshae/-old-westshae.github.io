@@ -7,8 +7,7 @@ import indexText from "../assets/shelf/indexText.js"
 import Container from "../components/Container"
 import Navigation from "../components/Navigation"
 import Content from "../components/Content"
-import Header from "../components/Header"
-import Paragraph from "../components/Paragraph"
+import {Header, Paragraph} from "../components/TextStyles"
 import TextWrapper from "../components/TextWrapper"
 
 //Third-party component imports

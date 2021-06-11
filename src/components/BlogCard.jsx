@@ -1,6 +1,5 @@
 import styled, {css} from "styled-components";
 import React from "react"
-import HorLine from "./HorLine";
 
 
 
