@@ -30,7 +30,6 @@ const MainPage = () => {
                     <Paragraph>
                         {indexText.paragraph2}
                     </Paragraph>
-                    {/* <Image src={pfp} width="100em" right="10px" position="absolute"/> */}
                 </TextWrapper>
             </Content>
         </Container>
