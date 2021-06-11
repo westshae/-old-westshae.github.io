@@ -12,9 +12,10 @@ import {UL, LI} from "../components/List"
 
 const ContactContainer = styled.div`
     display:grid;
-    grid-template-columns:1fr 1fr;
+    grid-template-columns:repeat(3, 1fr);
     grid-row-gap:0.5%;
     padding-bottom:1%;
+    text-align:center;
 `
 
 const ContactCard = styled.div`
@@ -30,6 +31,7 @@ const ContactCard = styled.div`
 const BorderedImage = styled.img`
     float:left;
     border-radius:8px;
+    
 `
 
 

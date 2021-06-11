@@ -6,11 +6,9 @@ import HorLine from "./HorLine";
 
 const CardStyle = styled.div`
     margin:0.5%;
-    padding-left:4%;
+    padding-left:2%;
     background-color:#1e2230;
     border-radius:2px;
-    height:100%;
-
     display:grid;
     :active{
     }
@@ -59,9 +57,9 @@ function IndividualCard(props){
 
     return (
         <CardStyle>
-            <Header href={props.link} target="_blank">{props.header}</Header>
-            <Description>{props.description}</Description>
-            <Description/>
+            <Header href={props.link} target="_blank">{props.title}</Header>
+            <Description>{props.readtime}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{props.date}</Description>
+
         </CardStyle>
     )
     

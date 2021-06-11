@@ -2,35 +2,29 @@
 import React from "react";
 import styled from "styled-components"
 
+//Text imports
+import BlogList from "../assets/shelf/blogList"
+
 //Component imports
 import IndividualCard from "../components/BlogCard"
 
 const CardContainer = styled.div`
     background-color:#272C3D;
-    height:100%;
     display:grid;
-    grid-template-rows:1fr;
+    grid-template-columns:1fr 1fr;
     grid-row-gap:0.5%;
 
     padding-bottom:1%;
 `
 
 function CardGrid(){
-    const list = [
-        {header: "Header", date: "00/00/2000", description: "lorem ipsum", blog: "Blog"},
-        {header: "Header", date: "00/00/2000", description: "lorem ipsum", blog: "Blog"},
-        {header: "Header", date: "00/00/2000", description: "lorem ipsum", blog: "Blog"},
-        {header: "Header", date: "00/00/2000", description: "lorem ipsum", blog: "Blog"},
-        {header: "Header", date: "00/00/2000", description: "lorem ipsum", blog: "Blog"},
-        {header: "Header", date: "00/00/2000", description: "lorem ipsum", blog: "Blog"},
-        {header: "Header", date: "00/00/2000", description: "lorem ipsum", blog: "Blog"},
-        {header: "Header", date: "00/00/2000", description: "lorem ipsum", blog: "Blog"},
-        {header: "Header", date: "00/00/2000", description: "lorem ipsum", blog: "Blog"}
-    ]
+    BlogList.forEach(element => {
+        console.log(element)
+    });
     return(
         <CardContainer>
-            {list.map((p, i)=>(
-                <IndividualCard header={p.header} date={p.date} description={p.description} blog={p.blog}/>
+            {BlogList.map((p, i)=>(
+                <IndividualCard title={p.title} date={p.date} readtime={p.readtime} link={p.link}/>
             ))}
         </CardContainer>
     )
