@@ -9,10 +9,10 @@ import Header from "../components/Header"
 
 
 
-const Blog = () => {
+const Writing = () => {
     return(
         <Container>
-            <Navigation page="blog"/>
+            <Navigation page="writing"/>
             <Content>
                 <Header/>
                 <BlogGrid/>
@@ -21,4 +21,4 @@ const Blog = () => {
     );
 }
 
-export default Blog;
+export default Writing;

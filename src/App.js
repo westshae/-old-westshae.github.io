@@ -1,12 +1,12 @@
 import React, { Component } from "react";
 
-import { BrowserRouter as Router, HashRouter, Route, Switch, Redirect } from "react-router-dom";
+import {HashRouter, Route, Switch, Redirect } from "react-router-dom";
 
 //Pages
 import Index from "./pages/index";
 import NotFound from "./pages/notfound"
-import Portfolio from "./pages/portfolio"
-import Blog from "./pages/blog"
+import Programming from "./pages/programming"
+import Writing from "./pages/writing"
 import Contact from "./pages/contact"
 
 class App extends Component {
@@ -17,8 +17,8 @@ class App extends Component {
           <Route exact path="/" component={Index} />
           <Route exact path="/index" component={Index}/>
           <Route exact path="/404" component={NotFound}/>
-          <Route exact path="/portfolio" component={Portfolio}/>
-          <Route exact path="/blog" component={Blog}/>
+          <Route exact path="/programming" component={Programming}/>
+          <Route exact path="/writing" component={Writing}/>
           <Route exact path="/contact" component={Contact}/>
           <Redirect component={NotFound}/>
         </Switch>

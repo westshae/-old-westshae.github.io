@@ -6,17 +6,20 @@ import Navigation from "../components/Navigation"
 import Content from "../components/Content"
 import CardGrid from "../components/CardGrid"
 import Paragraph from "../components/Paragraph"
+import Header from "../components/Header"
 
 //Text imports
 import portfolioText from "../assets/shelf/portfolioText"
 
 
 
-const Portfolio = () => {
+const Programming = () => {
     return(
         <Container>
-            <Navigation page="portfolio"/>
+            <Navigation page="programming"/>
             <Content>
+                <Header>{portfolioText.header}</Header>
+                <Paragraph>{portfolioText.paragraph1}</Paragraph>
                 <Paragraph/>
                 <CardGrid/>
             </Content>
@@ -24,4 +27,4 @@ const Portfolio = () => {
     );
 }
 
-export default Portfolio;
+export default Programming;

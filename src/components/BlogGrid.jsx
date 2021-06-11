@@ -18,9 +18,6 @@ const CardContainer = styled.div`
 `
 
 function CardGrid(){
-    BlogList.forEach(element => {
-        console.log(element)
-    });
     return(
         <CardContainer>
             {BlogList.map((p, i)=>(

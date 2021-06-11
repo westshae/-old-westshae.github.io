@@ -10,7 +10,6 @@ import Content from "../components/Content"
 import Header from "../components/Header"
 import Paragraph from "../components/Paragraph"
 import TextWrapper from "../components/TextWrapper"
-import Image from "../components/Image"
 
 //Third-party component imports
 import GitHubCalendar from "react-github-calendar";

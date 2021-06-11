@@ -24,13 +24,13 @@ function Navigation(props){
         history.push(path);
     }
 
-    const portfolioRoute=()=>{
-        let path = `portfolio`;
+    const programmingRoute=()=>{
+        let path = `programming`;
         history.push(path);
     }
 
-    const blogRoute=()=>{
-        let path=`blog`;
+    const writingRoute=()=>{
+        let path=`writing`;
         history.push(path);
     }
 
@@ -43,8 +43,8 @@ function Navigation(props){
         <StyledNavigation>
             <Button reverse main bold onClick={indexRoute}>/dev/altoyadev/{props.page}/</Button>
             <Button main onClick={indexRoute}>Home</Button>
-            <Button main onClick={portfolioRoute}>Portfolio</Button>
-            <Button main onClick={blogRoute}>Blog</Button>
+            <Button main onClick={programmingRoute}>Programming</Button>
+            <Button main onClick={writingRoute}>Writing</Button>
             <Button main onClick={contactRoute}>Contact</Button>
         </StyledNavigation>
     )
