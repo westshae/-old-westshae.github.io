@@ -20,22 +20,20 @@ const MainPage = () => {
         background: 'transparent',
         text: '#f8f8ff',
         grade0: '#1e2230',
-        
       };
     return(
         <Container>
             <Navigation page="home"/>
             <Content>
                 <TextWrapper>
-                    <Header>{indexText.header}</Header>
-                    <Paragraph>
-                        {indexText.paragraph1}
-                    </Paragraph>
-                    <Paragraph>
-                        {indexText.paragraph2}
-                    </Paragraph>
+                    <Header>{indexText.header1}</Header>
+                    <Paragraph>{indexText.paragraph1}</Paragraph>
+                    <GitHubCalendar username="westshae" theme={theme} blockSize={24} blockMargin={4} fontSize={20} showTotalCount={false} fullYear={false}/>
+                    <Header>{indexText.header2}</Header>
+                    <Paragraph>{indexText.paragraph2}</Paragraph>
+                    <Header>{indexText.header3}</Header>
+                    <Paragraph>{indexText.paragraph3}</Paragraph>
                 </TextWrapper>
-                <GitHubCalendar username="westshae" theme={theme} blockSize={24} blockMargin={4} fontSize={20} showTotalCount={false} fullYear={false}/>
             </Content>
         </Container>
     );
