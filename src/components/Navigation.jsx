@@ -9,7 +9,7 @@ const StyledNavigation = styled.nav`
     background-color:#1e2230;
     border-bottom:0.5vh solid #1b1e2b;
     display:flex;
-    height:6vh;
+    height:3.5rem;
     overflow:scroll;
     flex-direction:row;
     
