@@ -1,5 +1,6 @@
 import styled, {css} from "styled-components";
 import {useHistory} from "react-router-dom";
+import {useMediaQuery} from "react-responsive";
 
 import React from "react"
 
@@ -58,9 +59,11 @@ function Navigation(props){
         history.push(path);
     }
 
+    const isMobile = useMediaQuery({ query: "max-device-width: 480px"});
+
     return (
         <StyledNavigation>
-            <NavButton reverse main bold onClick={indexRoute}>/dev/altoyadev/{props.page}/</NavButton>
+            {isMobile && <NavButton reverse main bold onClick={indexRoute}>/dev/altoyadev/{props.page}/</NavButton>}
             <NavButton main onClick={indexRoute}>Home</NavButton>
             <NavButton main onClick={programmingRoute}>Programming</NavButton>
             <NavButton main onClick={writingRoute}>Writing</NavButton>
