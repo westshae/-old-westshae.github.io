@@ -10,26 +10,6 @@ const Button = styled.button`
 
     `}
 
-    ${props => props.main && css`
-    background:transparent;
-    color:#f8f8ff;
-    border:none;
-    text-align:center;
-    padding: 10px;
-    height:6vh;
-    font-size:20px;
-    font-family:Helvetica;
-    ${props => props.reverse && css`
-        margin-right:auto;
-    `};
-    :hover{
-        background-color: #181b27;
-    }
-    :active{
-        background-color:#1b1e2b;
-    }
-    `};
-
     ${props => props.transparent && css`
         background:transparent;
         color:white;

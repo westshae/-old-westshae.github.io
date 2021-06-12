@@ -19,10 +19,8 @@ import objectremoval from "../assets/shelf/Projects/objectremoval"
 
 const Container = styled.div`
     background-color:#272C3D;
-    height:1fr;
     display:grid;
     grid-template-columns:1fr 1fr 1fr;
-    grid-template-rows:1fr 1fr 1fr;
     grid-row-gap:0.25rem;
     
     @media only screen 
@@ -37,14 +35,14 @@ function Projects(){
         <div>
             <Container>
                 <IndividualCard header={comaltoya.header} description={comaltoya.description} link={comaltoya.link} react css html javascript/>
-                <IndividualCard header={objectremoval.header} description={objectremoval.description} link={objectremoval.link} cpp github linux vscode/> 
+                {/* <IndividualCard header={objectremoval.header} description={objectremoval.description} link={objectremoval.link} cpp github linux vscode/> 
                 <IndividualCard header={pythoncalculator.header} description={pythoncalculator.description} link={pythoncalculator.link} python vscode github/>
                 <IndividualCard header={easyeffects.header} description={easyeffects.description} link={easyeffects.link}  intellij java github/>
                 <IndividualCard header={hardcorefactions.header} description={hardcorefactions.description} link={hardcorefactions.link} java intellij github/>
                 <IndividualCard header={cargame.header} description={cargame.description} link={cargame.link}  linux github python vscode/>
                 <IndividualCard header={soundmanipulation.header} description={soundmanipulation.description} link={soundmanipulation.link} cpp github linux vscode/>
                 <IndividualCard header={javacalculator.header} description={javacalculator.description} link={javacalculator.link} java intellij github/>
-                <IndividualCard header={playerevents.header} description={playerevents.description} link={playerevents.link} java intellij github/>
+                <IndividualCard header={playerevents.header} description={playerevents.description} link={playerevents.link} java intellij github/> */}
             </Container>
             <Paragraph/>
         </div>

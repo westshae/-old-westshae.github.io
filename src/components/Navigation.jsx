@@ -1,16 +1,34 @@
-import styled from "styled-components";
+import styled, {css} from "styled-components";
 import {useHistory} from "react-router-dom";
 
 import React from "react"
 
-import Button from "../components/Button"
+const NavButton = styled.button`
+    background:transparent;
+    color:#f8f8ff;
+    border:none;
+    text-align:center;
+    padding: 10px;
+    height:3rem;
+    font-size:20px;
+    font-family:Helvetica;
+    ${props => props.reverse && css`
+        margin-right:auto;
+    `};
+    :hover{
+        background-color: #181b27;
+    }
+    :active{
+        background-color:#1b1e2b;
+    }
+`
 
 const StyledNavigation = styled.nav`
     background-color:#1e2230;
     border-bottom:0.5vh solid #1b1e2b;
     display:flex;
-    height:3.5rem;
-    overflow:scroll;
+    height:3rem;
+    /* overflow:scroll; */
     flex-direction:row;
     
 `
@@ -42,11 +60,11 @@ function Navigation(props){
 
     return (
         <StyledNavigation>
-            <Button reverse main bold onClick={indexRoute}>/dev/altoyadev/{props.page}/</Button>
-            <Button main onClick={indexRoute}>Home</Button>
-            <Button main onClick={programmingRoute}>Programming</Button>
-            <Button main onClick={writingRoute}>Writing</Button>
-            <Button main onClick={contactRoute}>Contact</Button>
+            <NavButton reverse main bold onClick={indexRoute}>/dev/altoyadev/{props.page}/</NavButton>
+            <NavButton main onClick={indexRoute}>Home</NavButton>
+            <NavButton main onClick={programmingRoute}>Programming</NavButton>
+            <NavButton main onClick={writingRoute}>Writing</NavButton>
+            <NavButton main onClick={contactRoute}>Contact</NavButton>
         </StyledNavigation>
     )
     
