@@ -3,12 +3,7 @@ import React from "react"
 
 //Logo imports
 
-import AmazonLogo from "../assets/images/logos/amazon.png"
 import AndroidLogo from "../assets/images/logos/android.png"
-import AngularLogo from "../assets/images/logos/angularjs.png"
-import ApacheLogo from "../assets/images/logos/apache.png"
-import AtomLogo from "../assets/images/logos/atom.png"
-import BabelLogo from "../assets/images/logos/babel.png"
 import CLogo from "../assets/images/logos/c.png"
 import CSharpLogo from "../assets/images/logos/c#.png"
 import CppLogo from "../assets/images/logos/cpp.png"
@@ -24,9 +19,7 @@ import JavascriptLogo from "../assets/images/logos/javascript.png"
 import LinuxLogo from "../assets/images/logos/linux.png"
 import PythonLogo from "../assets/images/logos/python.png"
 import ReactLogo from "../assets/images/logos/react.png"
-import SlackLogo from "../assets/images/logos/slack.png"
 import TypescriptLogo from "../assets/images/logos/typescript.png"
-import VSLogo from "../assets/images/logos/vs.png"
 import VSCodeLogo from "../assets/images/logos/vscode.png"
 
 
@@ -89,10 +82,6 @@ const Image = styled.img`
     padding-right:0.5%;
 `;
 
-const IconContainer = styled.div`
-`;
-
-
 function IndividualCard(props){
     return (
         <CardStyle>
@@ -103,12 +92,7 @@ function IndividualCard(props){
                 {props.react && <Image src={ReactLogo}/>}
                 {props.html && <Image src={Html5Logo}/>}
                 {props.javascript && <Image src={JavascriptLogo}/>}
-                {props.amazon && <Image src={AmazonLogo}/>}
                 {props.android && <Image src={AndroidLogo}/>}
-                {props.angular && <Image src={AngularLogo}/>}
-                {props.apache && <Image src={ApacheLogo}/>}
-                {props.atom && <Image src={AtomLogo}/>}
-                {props.babel && <Image src={BabelLogo}/>}
                 {props.c && <Image src={CLogo}/>}
                 {props.csharp && <Image src={CSharpLogo}/>}
                 {props.cpp && <Image src={CppLogo}/>}
@@ -120,9 +104,7 @@ function IndividualCard(props){
                 {props.intellij && <Image src={IntellijLogo}/>}
                 {props.java && <Image src={JavaLogo}/>}
                 {props.linux && <Image src={LinuxLogo}/>}
-                {props.slack && <Image src={SlackLogo}/>}
                 {props.typescript && <Image src={TypescriptLogo}/>}
-                {props.vs && <Image src={VSLogo}/>}
                 {props.vscode && <Image src={VSCodeLogo}/>}
                 {props.python && <Image src={PythonLogo}/>}
             </IconContainer>
