@@ -35,6 +35,11 @@ const Header = styled.a`
     :hover{
         text-decoration:underline;
     }
+    @media only screen 
+    and (max-device-width: 480px)
+    and (orientation: portrait) {
+        font-size:1em;
+    }
 `;
 
 const Description = styled.p`
@@ -60,8 +65,13 @@ const Container = styled.div`
     background-color:#272C3D;
     display:grid;
     grid-template-columns:1fr 1fr;
-    grid-row-gap:0.5%;
+    grid-row-gap:0.25rem;
     padding-bottom:1%;
+    @media only screen 
+    and (max-device-width: 480px)
+    and (orientation: portrait) {
+        grid-template-columns: repeat(1, 1fr);
+    }
 `
 
 function Grid(){
