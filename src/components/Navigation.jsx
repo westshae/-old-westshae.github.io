@@ -29,7 +29,6 @@ const StyledNavigation = styled.nav`
     border-bottom:0.5vh solid #1b1e2b;
     display:flex;
     height:3rem;
-    /* overflow:scroll; */
     flex-direction:row;
     
 `
@@ -44,8 +43,8 @@ function Navigation(props){
         history.push(path);
     }
 
-    const programmingRoute=()=>{
-        let path = `programming`;
+    const projectsRoute=()=>{
+        let path = `projects`;
         history.push(path);
     }
 
@@ -59,15 +58,13 @@ function Navigation(props){
         history.push(path);
     }
 
-    const isMobile = useMediaQuery({ query: "max-device-width: 480px"});
-
     return (
         <StyledNavigation>
             <MediaQuery query="(min-device-width: 480px)">
                 <NavButton reverse main bold onClick={indexRoute}>/dev/altoyadev/{props.page}/</NavButton>
             </MediaQuery>
             <NavButton main onClick={indexRoute}>Home</NavButton>
-            <NavButton main onClick={programmingRoute}>Programming</NavButton>
+            <NavButton main onClick={projectsRoute}>Projects</NavButton>
             <NavButton main onClick={writingRoute}>Writing</NavButton>
             <NavButton main onClick={contactRoute}>Contact</NavButton>
         </StyledNavigation>

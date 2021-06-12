@@ -15,7 +15,7 @@ import portfolioText from "../assets/shelf/portfolioText"
 const Programming = () => {
     return(
         <Container>
-            <Navigation page="programming"/>
+            <Navigation page="projects"/>
             <Content>
                 <Header>{portfolioText.header}</Header>
                 <Paragraph>{portfolioText.paragraph1}</Paragraph>
