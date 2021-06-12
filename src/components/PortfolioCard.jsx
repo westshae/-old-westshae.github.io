@@ -38,6 +38,8 @@ const CardStyle = styled.div`
     border-radius:2px;
     height:100%;
     display:grid;
+    
+    
     :active{
     }
     :hover{

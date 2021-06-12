@@ -19,10 +19,17 @@ import objectremoval from "../assets/shelf/Projects/objectremoval"
 
 const Container = styled.div`
     background-color:#272C3D;
-    height:100%;
+    height:1fr;
     display:grid;
-    grid-template-columns:repeat(3,1fr);
-    grid-row-gap:0.5%;
+    grid-template-columns:1fr 1fr 1fr;
+    grid-template-rows:1fr 1fr 1fr;
+    grid-row-gap:0.25rem;
+    
+    @media only screen 
+    and (max-device-width: 480px)
+    and (orientation: portrait) {
+        grid-template-columns: repeat(1, 1fr);
+    }
 `
 
 function Projects(){
