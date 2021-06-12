@@ -48,11 +48,6 @@ function Navigation(props){
         history.push(path);
     }
 
-    const writingRoute=()=>{
-        let path=`writing`;
-        history.push(path);
-    }
-
     const contactRoute=()=>{
         let path=`contact`;
         history.push(path);
@@ -65,7 +60,6 @@ function Navigation(props){
             </MediaQuery>
             <NavButton main onClick={indexRoute}>Home</NavButton>
             <NavButton main onClick={projectsRoute}>Projects</NavButton>
-            <NavButton main onClick={writingRoute}>Writing</NavButton>
             <NavButton main onClick={contactRoute}>Contact</NavButton>
         </StyledNavigation>
     )
