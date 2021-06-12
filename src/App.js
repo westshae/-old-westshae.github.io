@@ -15,7 +15,6 @@ class App extends Component {
         <Switch>
           <Route exact path="/" component={Index} />
           <Route exact path="/index" component={Index}/>
-          <Route exact path="/404" component={NotFound}/>
           <Route exact path="/programming" component={Projects}/>
           <Route exact path="/writing" component={Writing}/>
           <Route exact path="/contact" component={Contact}/>
