@@ -1,35 +1,123 @@
 import React from "react";
+import styled from "styled-components";
 
 //Text imports
 import indexText from "../assets/shelf/indexText.js"
+
+//Image imports
+import pfp from "../assets/images/misc/pfp.jpg"
+
 
 //Component imports
 import Container from "../components/Container"
 import Navigation from "../components/Navigation"
 import Content from "../components/Content"
 import {Header, Paragraph} from "../components/TextStyles"
+import {UL, LI} from "../components/List"
+
 
 //Third-party component imports
 import GitHubCalendar from "react-github-calendar";
+import ReactTooltip from "react-tooltip";
 
-const MainPage = () => {
+const CardContainer = styled.div`
+    background-color:#272C3D;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    grid-row-gap:0.25rem;
+    
+    @media only screen 
+    and (max-device-width: 480px)
+    and (orientation: portrait) {
+        grid-template-columns: repeat(1, 1fr);
+    }
+`
+
+const BorderedImage = styled.img`
+    float:left;
+    border-radius:8px;
+    
+`
+const ContactContainer = styled.div`
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    grid-column-gap:1rem;
+    padding-bottom:1%;
+    text-align:left;
+
+`
+const ContactCard = styled.div`
+    padding-top:1em;
+    margin:0.5%;
+    padding-left:4%;
+    border-radius:2px;
+    height:100%;
+
+    display:grid;
+`;
+
+
+const AboutMe = () => {
+    return(
+        <div>
+            <Header>{indexText.aboutmeheader}</Header>
+            <Paragraph>{indexText.aboutmeparagraph1}</Paragraph>
+            <Paragraph>{indexText.aboutmeparagraph2}</Paragraph>
+        </div>
+    )
+}
+
+const Contact = () => {
+    return(
+        <ContactContainer>
+            <ContactCard>
+                <Header>My Official Contact Methods</Header>
+                <UL>
+                    <LI>Twitter: @altoyadev</LI>
+                    <LI>Instagram: humanity.is.great</LI>
+                    <LI>Medium: shaewest02</LI>
+                    <LI>Email: shaewest02@gmail.com</LI>
+                    <LI>Discord: AuraBoom#2712</LI>
+                </UL>
+            </ContactCard>
+            <ContactCard>
+                <BorderedImage src={pfp} width="250em"/>
+            </ContactCard>
+        </ContactContainer>
+    )
+}
+
+const Contributions = () => {
     const calendarTheme = {
         background: 'transparent',
         text: '#f8f8ff',
         grade0: '#1e2230',
       };
+
+      return(
+        <GitHubCalendar username="westshae" theme={calendarTheme} blockSize={24} blockMargin={4} fontSize={20} showTotalCount={false} fullYear={false}>
+            <ReactTooltip delayShow={50} html />
+        </GitHubCalendar>
+      )
+}
+const SectionOne = () =>{
+    return(
+        <CardContainer>
+            <AboutMe/>
+            <Contact/>
+        </CardContainer>
+    )
+}
+
+
+const MainPage = () => {
       
     return(
         <Container>
             <Navigation page="home"/>
             <Content>
-                <Header>{indexText.header1}</Header>
-                <Paragraph>{indexText.paragraph1}</Paragraph>
-                <GitHubCalendar username="westshae" theme={calendarTheme} blockSize={24} blockMargin={4} fontSize={20} showTotalCount={false} fullYear={false}/>
-                <Header>{indexText.header2}</Header>
-                <Paragraph>{indexText.paragraph2}</Paragraph>
-                <Header>{indexText.header3}</Header>
-                <Paragraph>{indexText.paragraph3}</Paragraph>
+                <SectionOne/>
+                <Contributions/>
             </Content>
         </Container>
     );

@@ -5,7 +5,6 @@ import {HashRouter, Route, Switch, Redirect } from "react-router-dom";
 //Pages
 import Index from "./pages/index";
 import Projects from "./pages/projects"
-import Contact from "./pages/contact"
 
 class App extends Component {
   render() {
@@ -15,7 +14,6 @@ class App extends Component {
           <Route exact path="/" component={Index} />
           <Route exact path="/index" component={Index}/>
           <Route exact path="/projects" component={Projects}/>
-          <Route exact path="/contact" component={Contact}/>
           <Redirect component={"/index"}/>
         </Switch>
       </HashRouter>
