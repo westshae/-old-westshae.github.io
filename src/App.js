@@ -14,7 +14,7 @@ class App extends Component {
           <Route exact path="/" component={Index} />
           <Route exact path="/index" component={Index}/>
           <Route exact path="/projects" component={Projects}/>
-          <Redirect component={"/index"}/>
+          <Redirect to={"/"}/>
         </Switch>
       </HashRouter>
     )
