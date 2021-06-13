@@ -107,9 +107,7 @@ const SectionOne = () =>{
     )
 }
 
-
 const MainPage = () => {
-      
     return(
         <Container>
             <Navigation page="home"/>
