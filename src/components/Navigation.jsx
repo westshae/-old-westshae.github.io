@@ -48,11 +48,6 @@ function Navigation(props){
         history.push(path);
     }
 
-    const contactRoute=()=>{
-        let path=`contact`;
-        history.push(path);
-    }
-
     return (
         <StyledNavigation>
             <MediaQuery query="(min-device-width: 480px)">
@@ -60,7 +55,6 @@ function Navigation(props){
             </MediaQuery>
             <NavButton main onClick={indexRoute}>Home</NavButton>
             <NavButton main onClick={projectsRoute}>Projects</NavButton>
-            <NavButton main onClick={contactRoute}>Contact</NavButton>
         </StyledNavigation>
     )
     
