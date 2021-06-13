@@ -1,7 +1,7 @@
+//Package imports
 import styled, {css} from "styled-components";
 import {useHistory} from "react-router-dom";
 import MediaQuery from "react-responsive";
-
 import React from "react"
 
 const NavButton = styled.button`

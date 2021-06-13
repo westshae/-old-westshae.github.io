@@ -65,7 +65,6 @@ const Container = styled.div`
     background-color:#272C3D;
     display:grid;
     grid-template-columns:1fr 1fr;
-    /* grid-template-rows:repeat(8, 1fr); */
     grid-row-gap:0.25rem;
     padding-bottom:1%;
     @media only screen 

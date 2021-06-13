@@ -1,5 +1,8 @@
+//Package imports
 import React from "react";
 import styled from "styled-components";
+import GitHubCalendar from "react-github-calendar";
+import ReactTooltip from "react-tooltip";
 
 //Text imports
 import indexText from "../assets/shelf/indexText.js"
@@ -14,11 +17,6 @@ import Navigation from "../components/Navigation"
 import Content from "../components/Content"
 import {Header, Paragraph} from "../components/TextStyles"
 import {UL, LI} from "../components/List"
-
-
-//Third-party component imports
-import GitHubCalendar from "react-github-calendar";
-import ReactTooltip from "react-tooltip";
 
 const CardContainer = styled.div`
     background-color:#272C3D;
