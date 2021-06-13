@@ -1,7 +1,8 @@
 //Package imports
 import styled from "styled-components";
 
-const styledContainer = styled.div`
+//Overall container for all components on the page, wraps around navbar and content
+const Container = styled.div`
     background-color:#272C3D;
     display:flex;
     flex-direction:column;
@@ -10,4 +11,4 @@ const styledContainer = styled.div`
 
 `
 
-export default styledContainer;
+export default Container;

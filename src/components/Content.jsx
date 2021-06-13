@@ -1,7 +1,8 @@
 //Package imports
 import styled from "styled-components";
 
-const styledContent = styled.div`
+//Wraps all content on the page, excluding navbar
+const Content = styled.div`
     margin-left:10%;
     margin-right:10%;
     background-clip:margin-box;
@@ -11,4 +12,4 @@ const styledContent = styled.div`
 
 `
 
-export default styledContent;
+export default Content;
