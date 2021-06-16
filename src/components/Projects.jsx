@@ -167,15 +167,6 @@ function Projects(){
                 {ProjectList.map((element, i)=>(
                     <IndividualCard header={element.header} description={element.description} link={element.link} images={element.images} technologies={element.technologies}/>//Need to add image system via props
                 ))}
-                {/* <IndividualCard header={comaltoya.header} description={comaltoya.description} link={comaltoya.link} react css html javascript/>
-                <IndividualCard header={objectremoval.header} description={objectremoval.description} link={objectremoval.link} cpp github linux vscode/> 
-                <IndividualCard header={pythoncalculator.header} description={pythoncalculator.description} link={pythoncalculator.link} python vscode github/>
-                <IndividualCard header={easyeffects.header} description={easyeffects.description} link={easyeffects.link}  intellij java github/>
-                <IndividualCard header={hardcorefactions.header} description={hardcorefactions.description} link={hardcorefactions.link} java intellij github/>
-                <IndividualCard header={cargame.header} description={cargame.description} link={cargame.link}  linux github python vscode/>
-                <IndividualCard header={soundmanipulation.header} description={soundmanipulation.description} link={soundmanipulation.link} cpp github linux vscode/>
-                <IndividualCard header={javacalculator.header} description={javacalculator.description} link={javacalculator.link} java intellij github/>
-                <IndividualCard header={playerevents.header} description={playerevents.description} link={playerevents.link} java intellij github/> */}
             </Container>
             <Paragraph/>
         </div>
