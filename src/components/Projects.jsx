@@ -31,11 +31,11 @@ import VSCodeLogo from "../assets/images/logos/vscode.png"
 
 
 const CardStyle = styled.div`
-    margin:0.5%;
-    padding-left:4%;
+    margin:0.25rem;
+    margin-top:0;
+    padding-left:0.75rem;
     background-color:#1e2230;
-    border-radius:2px;
-    height:100%;
+    border-radius:0.125rem;
     display:grid;
 
     :hover{
@@ -71,14 +71,13 @@ const Description = styled.p`
     -webkit-box-orient: vertical; 
     overflow:hidden;
     text-overflow:ellipsis;
-    padding-right:6%;
 `;
 
 const Image = styled.img`
     height:4em;
     width:auto;
-    padding-left:0.5%;
-    padding-right:0.5%;
+    padding-left:0.25rem;
+    padding-right:0.25rem;
 `;
 
 function IndividualCard(props){
@@ -111,24 +110,6 @@ function IndividualCard(props){
                         case "python":return <Image src={PythonLogo}/>
                     }
                 })}
-                {/* {props.react && <Image src={ReactLogo}/>}
-                {props.html && <Image src={Html5Logo}/>}
-                {props.javascript && <Image src={JavascriptLogo}/>}
-                {props.android && <Image src={AndroidLogo}/>}
-                {props.c && <Image src={CLogo}/>}
-                {props.csharp && <Image src={CSharpLogo}/>}
-                {props.cpp && <Image src={CppLogo}/>}
-                {props.css && <Image src={CssLogo}/>}
-                {props.docker && <Image src={DockerLogo}/>}
-                {props.git && <Image src={GitLogo}/>}
-                {props.github && <Image src={GithubLogo}/>}
-                {props.gitlab && <Image src={GitlabLogo}/>}
-                {props.intellij && <Image src={IntellijLogo}/>}
-                {props.java && <Image src={JavaLogo}/>}
-                {props.linux && <Image src={LinuxLogo}/>}
-                {props.typescript && <Image src={TypescriptLogo}/>}
-                {props.vscode && <Image src={VSCodeLogo}/>}
-                {props.python && <Image src={PythonLogo}/>} */}
             </div>
         </CardStyle>
     )
