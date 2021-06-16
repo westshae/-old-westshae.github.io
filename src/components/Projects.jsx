@@ -97,6 +97,7 @@ function IndividualCard(props){
         <CardStyle>
             <Header href={props.link} target="_blank">{props.header}</Header>
             <Description>{props.description}</Description>
+            <Description>Technologies used: {props.technologies}</Description>
             <Description/>
             <div>
                 {props.images.map((element,i) => {
@@ -164,7 +165,7 @@ function Projects(){
         <div>
             <Container>
                 {ProjectList.map((element, i)=>(
-                    <IndividualCard header={element.header} description={element.description} link={element.link} images={element.images}/>//Need to add image system via props
+                    <IndividualCard header={element.header} description={element.description} link={element.link} images={element.images} technologies={element.technologies}/>//Need to add image system via props
                 ))}
                 {/* <IndividualCard header={comaltoya.header} description={comaltoya.description} link={comaltoya.link} react css html javascript/>
                 <IndividualCard header={objectremoval.header} description={objectremoval.description} link={objectremoval.link} cpp github linux vscode/> 
