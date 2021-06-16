@@ -2,6 +2,9 @@
 import styled from "styled-components";
 import React from "react";
 
+//Text imports
+import ProjectList from "../assets/shelf/projectList"
+
 //Component imports
 import {Paragraph} from "./TextStyles"
 
@@ -138,7 +141,10 @@ function Projects(){
     return(
         <div>
             <Container>
-                <IndividualCard header={comaltoya.header} description={comaltoya.description} link={comaltoya.link} react css html javascript/>
+                {ProjectList.map((p,i)=>(
+                    <IndividualCard header={p.header} description={p.description} link={p.link}/>//Need to add image system via props
+                ))}
+                {/* <IndividualCard header={comaltoya.header} description={comaltoya.description} link={comaltoya.link} react css html javascript/>
                 <IndividualCard header={objectremoval.header} description={objectremoval.description} link={objectremoval.link} cpp github linux vscode/> 
                 <IndividualCard header={pythoncalculator.header} description={pythoncalculator.description} link={pythoncalculator.link} python vscode github/>
                 <IndividualCard header={easyeffects.header} description={easyeffects.description} link={easyeffects.link}  intellij java github/>
@@ -146,7 +152,7 @@ function Projects(){
                 <IndividualCard header={cargame.header} description={cargame.description} link={cargame.link}  linux github python vscode/>
                 <IndividualCard header={soundmanipulation.header} description={soundmanipulation.description} link={soundmanipulation.link} cpp github linux vscode/>
                 <IndividualCard header={javacalculator.header} description={javacalculator.description} link={javacalculator.link} java intellij github/>
-                <IndividualCard header={playerevents.header} description={playerevents.description} link={playerevents.link} java intellij github/>
+                <IndividualCard header={playerevents.header} description={playerevents.description} link={playerevents.link} java intellij github/> */}
             </Container>
             <Paragraph/>
         </div>

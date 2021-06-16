@@ -13,3 +13,5 @@ const projectList = [
     {header:"CPP_Learning", link:"https://github.com/westshae/cpp_learning", description:"List of small C++ projects to learn certain C++ ideas",technologies:"C++", image:{}},
     // {header:"", link:"", description:"",technologies:"", image:{}},
 ]
+
+export default projectList;
