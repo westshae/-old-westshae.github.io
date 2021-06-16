@@ -8,17 +8,6 @@ import ProjectList from "../assets/shelf/projectList"
 //Component imports
 import {Paragraph} from "./TextStyles"
 
-//Text imports for projects
-import comaltoya from "../assets/shelf/Projects/comaltoya"
-import cargame from "../assets/shelf/Projects/cargame"
-import easyeffects from "../assets/shelf/Projects/easyeffects"
-import hardcorefactions from "../assets/shelf/Projects/hardcorefactions"
-import javacalculator from "../assets/shelf/Projects/javacalculator"
-import playerevents from "../assets/shelf/Projects/playerevents"
-import pythoncalculator from "../assets/shelf/Projects/pythoncalculator"
-import soundmanipulation from "../assets/shelf/Projects/soundmanipulation"
-import objectremoval from "../assets/shelf/Projects/objectremoval"
-
 //Logo imports
 import AndroidLogo from "../assets/images/logos/android.png"
 import CLogo from "../assets/images/logos/c.png"
