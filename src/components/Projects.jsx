@@ -99,7 +99,29 @@ function IndividualCard(props){
             <Description>{props.description}</Description>
             <Description/>
             <div>
-                {props.react && <Image src={ReactLogo}/>}
+                {props.images.map((element,i) => {
+                    switch(element){
+                        case "react":return <Image src={ReactLogo}/>
+                        case "html":return <Image src={Html5Logo}/>
+                        case "javascript":return <Image src={JavascriptLogo}/>
+                        case "android":return <Image src={AndroidLogo}/>
+                        case "c":return <Image src={CLogo}/>
+                        case "csharp":return <Image src={CSharpLogo}/>
+                        case "cpp":return <Image src={CppLogo}/>
+                        case "css":return <Image src={CssLogo}/>
+                        case "docker":return <Image src={DockerLogo}/>
+                        case "git":return <Image src={GitLogo}/>
+                        case "github":return <Image src={GithubLogo}/>
+                        case "gitlab":return <Image src={GitlabLogo}/>
+                        case "intellij":return <Image src={IntellijLogo}/>
+                        case "java":return <Image src={JavaLogo}/>
+                        case "linux":return <Image src={LinuxLogo}/>
+                        case "typescript":return <Image src={TypescriptLogo}/>
+                        case "vscode":return <Image src={VSCodeLogo}/>
+                        case "python":return <Image src={PythonLogo}/>
+                    }
+                })}
+                {/* {props.react && <Image src={ReactLogo}/>}
                 {props.html && <Image src={Html5Logo}/>}
                 {props.javascript && <Image src={JavascriptLogo}/>}
                 {props.android && <Image src={AndroidLogo}/>}
@@ -116,7 +138,7 @@ function IndividualCard(props){
                 {props.linux && <Image src={LinuxLogo}/>}
                 {props.typescript && <Image src={TypescriptLogo}/>}
                 {props.vscode && <Image src={VSCodeLogo}/>}
-                {props.python && <Image src={PythonLogo}/>}
+                {props.python && <Image src={PythonLogo}/>} */}
             </div>
         </CardStyle>
     )
@@ -141,8 +163,8 @@ function Projects(){
     return(
         <div>
             <Container>
-                {ProjectList.map((p,i)=>(
-                    <IndividualCard header={p.header} description={p.description} link={p.link}/>//Need to add image system via props
+                {ProjectList.map((element, i)=>(
+                    <IndividualCard header={element.header} description={element.description} link={element.link} images={element.images}/>//Need to add image system via props
                 ))}
                 {/* <IndividualCard header={comaltoya.header} description={comaltoya.description} link={comaltoya.link} react css html javascript/>
                 <IndividualCard header={objectremoval.header} description={objectremoval.description} link={objectremoval.link} cpp github linux vscode/> 
