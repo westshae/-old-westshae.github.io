@@ -21,7 +21,7 @@ import {UL, LI} from "../components/List"
 const CardContainer = styled.div`
     background-color:#272C3D;
     display:grid;
-    grid-template-columns:1fr 1fr;
+    grid-template-columns:2fr 1fr 1fr;
     grid-row-gap:0.25rem;
     
     @media only screen 
@@ -78,10 +78,15 @@ const Contact = () => {
                     <LI>Discord: AuraBoom#2712</LI>
                 </UL>
             </ContactCard>
-            <ContactCard>
-                <BorderedImage src={pfp} width="250em"/>
-            </ContactCard>
         </ContactContainer>
+    )
+}
+
+const Image = () =>{
+    return(
+        <ContactCard>
+            <BorderedImage src={pfp} width="250em"/>
+        </ContactCard>
     )
 }
 
@@ -103,6 +108,7 @@ const SectionOne = () =>{
         <CardContainer>
             <AboutMe/>
             <Contact/>
+            <Image/>
         </CardContainer>
     )
 }
