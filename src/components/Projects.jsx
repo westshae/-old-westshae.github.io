@@ -86,6 +86,7 @@ function IndividualCard(props){
             <Header href={props.link} target="_blank">{props.header}</Header>
             <Description>{props.description}</Description>
             <Description>Technologies used: {props.technologies}</Description>
+            <Description>Year worked on: {props.year}</Description>
             <Description/>
             <div>
                 {props.images.map((element,i) => {
@@ -135,7 +136,7 @@ function Projects(){
         <div>
             <Container>
                 {ProjectList.map((element, i)=>(
-                    <IndividualCard header={element.header} description={element.description} link={element.link} images={element.images} technologies={element.technologies}/>//Need to add image system via props
+                    <IndividualCard header={element.header} year={element.year} description={element.description} link={element.link} images={element.images} technologies={element.technologies}/>//Need to add image system via props
                 ))}
             </Container>
             <Paragraph/>
