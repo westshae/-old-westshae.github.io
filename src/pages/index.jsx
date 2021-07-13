@@ -21,7 +21,7 @@ import {UL, LI} from "../components/List"
 const CardContainer = styled.div`
     background-color:#272C3D;
     display:grid;
-    grid-template-columns:2fr 1fr 1fr;
+    grid-template-columns:3fr 2fr 2fr;
     grid-row-gap:0.25rem;
     
     @media only screen 
@@ -34,15 +34,6 @@ const CardContainer = styled.div`
 const BorderedImage = styled.img`
     float:left;
     border-radius:8px;
-    
-`
-const ContactContainer = styled.div`
-    display:grid;
-    grid-template-columns:repeat(3, 1fr);
-    grid-column-gap:1rem;
-    padding-bottom:1%;
-    text-align:left;
-
 `
 const ContactCard = styled.div`
     padding-top:1em;
@@ -67,18 +58,14 @@ const AboutMe = () => {
 
 const Contact = () => {
     return(
-        <ContactContainer>
             <ContactCard>
                 <Header>My Official Contact Methods</Header>
                 <UL>
                     <LI>Twitter: @altoyadev</LI>
-                    <LI>Instagram: humanity.is.great</LI>
-                    <LI>Medium: shaewest02</LI>
                     <LI>Email: shaewest02@gmail.com</LI>
                     <LI>Discord: AuraBoom#2712</LI>
                 </UL>
             </ContactCard>
-        </ContactContainer>
     )
 }
 

@@ -7,7 +7,7 @@ const LI = styled.li`
 
 const UL = styled.ul`
     color:#f8f8ff;
-    list-style:circle solid;
+    /* list-style-type:square solid; */
     font-size:20px;
 `
 
