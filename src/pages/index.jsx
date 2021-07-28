@@ -63,7 +63,7 @@ const Contact = () => {
                 <UL>
                     <LI>Twitter: @altoyadev</LI>
                     <LI>Email: shaewest02@gmail.com</LI>
-                    <LI>Discord: AuraBoom#2712</LI>
+                    <LI>Discord: westshae#2712</LI>
                 </UL>
             </ContactCard>
     )
@@ -86,7 +86,7 @@ const Contributions = () => {
 
       return(
         <GitHubCalendar username="westshae" theme={calendarTheme} blockSize={24} blockMargin={4} fontSize={20} showTotalCount={false} fullYear={false}>
-            <ReactTooltip delayShow={50} html />
+            <ReactTooltip delayShow={50} html/>
         </GitHubCalendar>
       )
 }
