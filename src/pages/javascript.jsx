@@ -1,6 +1,16 @@
+//Component imports
+import Container from "../components/Container"
+import Navigation from "../components/Navigation"
+import Content from "../components/Content"
+
 const Javascript = () =>{
     return(
-        <h1>Test</h1>
+        <Container>
+            <Navigation/>
+            <Content>
+                <h1>Javascript</h1>
+            </Content>
+        </Container>
     )
 }
 

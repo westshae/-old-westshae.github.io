@@ -9,9 +9,9 @@ import Content from "../components/Content"
 const MainPage = () => {
     return(
         <Container>
-            <Navigation page="home"/>
+            <Navigation/>
             <Content>
-                <h1>RESTART</h1>
+                <h1>Index</h1>
             </Content>
         </Container>
     );

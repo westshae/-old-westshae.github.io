@@ -3,8 +3,8 @@ import styled from "styled-components";
 
 //Wraps all content on the page, excluding navbar
 const Content = styled.div`
-    margin-left:7.5rem;
-    margin-right:7.5rem;
+    margin-left:10%;
+    margin-right:10%;
     background-clip:margin-box;
     background-color:#f8f8ff;
     display:flex;
