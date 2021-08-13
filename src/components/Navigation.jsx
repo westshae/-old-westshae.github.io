@@ -12,9 +12,6 @@ const Button = styled.button`
     height:3rem;
     font-size:1.25em;
     font-family:Helvetica;
-    ${props => props.right && css`
-        margin-right:auto;
-    `};
     :hover{
         background-color: #181b27;
     }
@@ -33,15 +30,10 @@ function Navigation(props){
     const history = useHistory();
 
     const indexRoute=()=> {history.push(`index`);}
-    const projectsRoute=()=>{history.push(`projects`);}
 
     return (
         <StyledNavigation>
-            <MediaQuery query="(min-device-width: 480px)">
-                <Button right onClick={indexRoute}>/dev/altoyadev/{props.page}/</Button>
-            </MediaQuery>
             <Button onClick={indexRoute}>Home</Button>
-            <Button onClick={projectsRoute}>Projects</Button>
         </StyledNavigation>
     )
     
