@@ -5,6 +5,7 @@ import styled from "styled-components";
 const Content = styled.div`
     margin-left:10%;
     margin-right:10%;
+    margin-bottom:3%;
     background-clip:margin-box;
     background-color:#f8f8ff;
     display:flex;
