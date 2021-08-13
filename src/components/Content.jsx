@@ -6,7 +6,7 @@ const Content = styled.div`
     margin-left:7.5rem;
     margin-right:7.5rem;
     background-clip:margin-box;
-    background-color:#272C3D;
+    background-color:#f8f8ff;
     display:flex;
     flex-direction:column;
     @media only screen 

@@ -1,6 +1,5 @@
 //Package imports
 import React from "react";
-import styled from "styled-components";
 
 //Component imports
 import Container from "../components/Container"
