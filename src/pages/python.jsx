@@ -8,14 +8,23 @@ import Content from "../components/Content"
 import Projects from "../components/Projects"
 
 const TextContainer = styled.div`
-
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
 `
 
 const Header = styled.h1`
     color:#800000;
+    text-align:center;
 `
 const Paragraph = styled.p`
     color:#800000;
+    width:70%;
+
+    text-align:center;
+    align-items:center;
+    margin-left:auto;
+    margin-right:auto;
 `
 
 const Python = () =>{
@@ -23,7 +32,13 @@ const Python = () =>{
         <Container>
             <Navigation/>
             <Content>
-                <Header>Python</Header>
+                <TextContainer>
+                    <Header>Python</Header>
+                    <Paragraph>
+                        Python initially took the place of my first language, and due to most of those projects being created before I used git, 
+                        they unfortunately haven't been saved.
+                    </Paragraph>
+                </TextContainer>
                 <Projects language="Python"/>
             </Content>
         </Container>
