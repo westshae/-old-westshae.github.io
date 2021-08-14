@@ -12,14 +12,14 @@ const CardContainer = styled.div`
 
 const CardStyle = styled.div`
     padding:3%;
-    color:#800000;
+    color:#322759;
     display:grid;
     border:solid 2px;
 `
 
 const Button = styled.button`
     background:transparent;
-    color:#800000;
+    color:#322759;
     border:none;
     font-size:1.5em;
     font-family:Helvetica;
@@ -70,11 +70,9 @@ const Projects = (props) =>{
             {
                 repos.map((repo, index)=>{
                     if(repo.archived){return;}
-                    if(props.language != "others"){
-                        if(repo.language != props.language){return;}
-                    }else{
-                        if(repo.language == "Java" || repo.language == "Python" || repo.language == "JavaScript"){return;}
-                    }
+                    if(props.language !== "others"){if(repo.language !== props.language){return;}}
+                    else if(repo.language === "Java" || repo.language === "Python" || repo.language === "JavaScript"){return;}
+                    
                     return(<Card name={repo.name} description={repo.description} link={repo.html_url} key={index}/>)
                 })
             }

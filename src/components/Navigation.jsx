@@ -1,12 +1,12 @@
 //Package imports
-import styled, {css} from "styled-components";
+import styled from "styled-components";
 import {useHistory} from "react-router-dom";
 import React from "react"
 
 //Style for navigation buttons
 const Button = styled.button`
     background:transparent;
-    color:#800000;
+    color: #322759 ;
     border:none;
     font-size:1.25em;
     font-family:Helvetica;
@@ -16,7 +16,7 @@ const Button = styled.button`
 `
 //Style for navigation bar background
 const StyledNavigation = styled.nav`
-    border-bottom:2px solid #800000;
+    background-color: transparent;
     display:grid;
     grid-template-columns:2fr 1fr 2fr;
     height:100%;
@@ -33,7 +33,7 @@ const Section = styled.div`
 const Title = styled.button`
     font-size:1.5rem;
     background:transparent;
-    color:#800000;
+    color:#322759 ;
     border:none;
     font-weight:bold;
     padding-top:3%;

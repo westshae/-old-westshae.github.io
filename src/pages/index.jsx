@@ -14,12 +14,12 @@ const TextContainer = styled.div`
 `
 
 const Header = styled.h1`
-    color:#800000;
+    color:#322759;
     text-align:center;
     font-size:2rem;
 `
 const Paragraph = styled.p`
-    color:#800000;
+    color:#322759;
     width:70%;
     font-size:1.25rem;
 
