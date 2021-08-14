@@ -53,7 +53,9 @@ const Projects = (props) =>{
 
 
     useEffect(()=>{
-        axios.get("https://api.github.com/users/westshae/repos", {'headers' : {'Authorization': 'token ' + process.env.REACT_APP_API_TOKEN}})
+        // Line below used for development
+        // axios.get("https://api.github.com/users/westshae/repos", {'headers' : {'Authorization': 'token ' + process.env.REACT_APP_API_TOKEN}})
+        axios.get("https://api.github.com/users/westshae/repos")
         .then((response) => {
             console.log(response.data)
             setRepos(response.data);
