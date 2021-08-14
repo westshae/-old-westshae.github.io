@@ -72,9 +72,9 @@ const Navigation = () => {
                 <Title onClick={indexRoute}>Shae West's Portfolio</Title>
             </Section>
             <Section>
+                <Button onClick={javascriptRoute}>Javascript</Button>
                 <Button onClick={pythonRoute}>Python</Button>
                 <Button onClick={javaRoute}>Java</Button>
-                <Button onClick={javascriptRoute}>Javascript</Button>
                 <Button onClick={othersRoute}>Others</Button>
             </Section>
         </StyledNavigation>
