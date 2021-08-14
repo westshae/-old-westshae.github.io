@@ -14,35 +14,41 @@ const CardStyle = styled.div`
     padding:3%;
     color:#800000;
     display:grid;
-    grid-template-columns:3fr 2fr;
-    grid-column-gap:3%;
     border:solid 2px;
 `
 
-const BasicDataContainer = styled.div`
-    display:grid;
-    grid-template-columns:1fr;
+const Button = styled.button`
+    background:transparent;
+    color:#800000;
+    border:none;
+    font-size:1.5em;
+    font-family:Helvetica;
+    font-weight:bold;
+    :hover{
+        text-decoration:underline 2px;
+    }
 `
+const Paragraph = styled.p`
+    justify-content:center;
+    align-items:center;
+    margin-left:10%;
+    margin-right:10%;
+`
+
+const openInNewTab = (url) =>{
+    window.open(url, "_blank", "noopener");
+}
 
 const Card = (props) =>{
     return(
         <CardStyle>
-            <div>
-                <h1>Repo name: {props.name}</h1>
-                <p>Description: {props.description}</p>
-            </div>
-
-            <BasicDataContainer>
-                {/* Note, results styled as "buttons" next to text */}
-                <p>Last commit date: {props.lastCommit}</p>
-                <p>Repo Link: {props.link}</p>
-                <p>Commit amount: {props.commitCount}</p>
-            </BasicDataContainer>
+            <Button onClick={() => openInNewTab(props.link)}>{props.name}</Button>
+            <Paragraph>{props.description}</Paragraph>
         </CardStyle>
     )
 }
 
-const Projects = () =>{
+const Projects = (props) =>{
     const [repos, setRepos] = useState([]);
 
 
@@ -62,7 +68,12 @@ const Projects = () =>{
             {
                 repos.map((repo, index)=>{
                     if(repo.archived){return;}
-                    return(<Card name={repo.name} description={repo.description} key={index}/>)
+                    if(props.language != "others"){
+                        if(repo.language != props.language){return;}
+                    }else{
+                        if(repo.language == "Java" || repo.language == "Python" || repo.language == "JavaScript"){return;}
+                    }
+                    return(<Card name={repo.name} description={repo.description} link={repo.html_url} key={index}/>)
                 })
             }
         </CardContainer>

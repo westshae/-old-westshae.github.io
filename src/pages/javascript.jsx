@@ -11,7 +11,7 @@ const Javascript = () =>{
             <Navigation/>
             <Content>
                 <h1>Javascript</h1>
-                <Projects/>
+                <Projects language="JavaScript"/>
             </Content>
         </Container>
     )

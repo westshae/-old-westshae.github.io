@@ -11,7 +11,7 @@ const Java = () =>{
             <Navigation/>
             <Content>
                 <h1>Java</h1>
-                <Projects/>
+                <Projects language="Java"/>
             </Content>
         </Container>
     )

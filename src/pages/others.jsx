@@ -11,7 +11,7 @@ const Others = () =>{
             <Navigation/>
             <Content>
                 <h1>Others</h1>
-                <Projects/>
+                <Projects language="others"/>
             </Content>
         </Container>
     )
