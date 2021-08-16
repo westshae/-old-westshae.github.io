@@ -19,7 +19,7 @@ const StyledNavigation = styled.nav`
     background-color: transparent;
     display:grid;
     grid-template-columns:2fr 1fr 2fr;
-    height:100%;
+    /* height:100%; */
 `
 
 const Section = styled.div`

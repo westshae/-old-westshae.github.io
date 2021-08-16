@@ -6,6 +6,7 @@ import styled from "styled-components"
 import Container from "../components/Container"
 import Navigation from "../components/Navigation"
 import Content from "../components/Content"
+import Footer from "../components/Footer";
 
 const TextContainer = styled.div`
     display:flex;
@@ -55,10 +56,12 @@ const MainPage = () => {
                     <Paragraph>
                         I now believe my skills are at the point where I can begin to work on larger projects, and begin to work on projects with slightly 
                         more risk. For example, I've started to offer my services to various businesses, and I'm currently applying to various companies 
-                        in regards to internships and future work possibilities, so contact me if you're interested in any of this..
+                        in regards to internships and future work possibilities, so contact me if you're interested in any of this.
                     </Paragraph>
                 </TextContainer>
             </Content>
+            <Footer/>
+
         </Container>
     );
 }
