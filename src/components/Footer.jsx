@@ -21,28 +21,6 @@ const StyledFooter = styled.div`
     }
 `
 
-//CSS for Footer text
-const Paragraph = styled.p`
-    text-align:center;
-    margin:0.75rem;
-`
-
-//CSS for anchor text
-const Anchor = styled.a`
-    color:#f8f9fa;
-    height:auto;
-`
-
-const Image = styled.img`
-    //Desktop
-    @media only screen 
-    and (min-device-width: 1025px){
-        :hover{
-            opacity:0.7;
-        }
-    }
-`
-
 //Component returned
 const Footer = () =>{
     return(
