@@ -8,6 +8,13 @@ const CardContainer = styled.div`
     grid-row-gap:2%;
     grid-column-gap:2%;
     grid-template-columns:1fr 1fr;
+    //Mobile support
+    @media only screen 
+    and (max-device-width: 480px)
+    and (orientation: portrait) {
+        grid-template-columns:1fr;
+        padding-bottom:10%;
+    }
 `
 
 const CardStyle = styled.div`
@@ -15,6 +22,12 @@ const CardStyle = styled.div`
     color:#322759;
     display:grid;
     border:solid 2px;
+    //Mobile support
+    @media only screen 
+    and (max-device-width: 480px)
+    and (orientation: portrait) {
+        text-align:center;
+    }
 `
 
 const Button = styled.button`
