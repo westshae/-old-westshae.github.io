@@ -22,6 +22,8 @@ const Header = styled.h1`
 const Paragraph = styled.p`
     color:#322759;
     width:70%;
+    font-size:1.25rem;
+
 
     text-align:center;
     align-items:center;
