@@ -28,6 +28,12 @@ const Paragraph = styled.p`
     align-items:center;
     margin-left:auto;
     margin-right:auto;
+    //Mobile
+    @media only screen
+    and (orientation: portrait)
+    and (max-device-width: 480px){
+        width:100%;
+    }
 `
 
 const MainPage = () => {
