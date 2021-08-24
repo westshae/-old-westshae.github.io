@@ -11,6 +11,17 @@ const Container = styled.div`
     display:flex;
     flex-direction:column;
     overflow:visible;
+    height: 100%;
+    width: 100%;
+
+    /* Set the height to match that of the viewport. */
+    height: 100vh;
+
+    /* Set the width to match that of the viewport. */
+    width: 100vw;
+
+    /* Remove any browser-default margins. */
+    margin: 0;
 `
 
 

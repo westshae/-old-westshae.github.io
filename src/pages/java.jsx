@@ -6,6 +6,8 @@ import Container from "../components/Container"
 import Navigation from "../components/Navigation"
 import Content from "../components/Content"
 import Projects from "../components/Projects"
+import Footer from "../components/Footer";
+
 
 const TextContainer = styled.div`
     display:flex;
@@ -25,6 +27,13 @@ const Paragraph = styled.p`
     align-items:center;
     margin-left:auto;
     margin-right:auto;
+    //Mobile support
+    @media only screen 
+    and (max-device-width: 480px)
+    and (orientation: portrait) {
+        width:100%;
+        font-size:1.25rem;
+    }
 `
 
 
@@ -46,6 +55,7 @@ const Java = () =>{
                 </TextContainer>
                 <Projects language="Java"/>
             </Content>
+            <Footer/>
         </Container>
     )
 }

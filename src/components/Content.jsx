@@ -10,11 +10,12 @@ const Content = styled.div`
     background-color:transparent;
     display:flex;
     flex-direction:column;
+    //Mobile support
     @media only screen 
     and (max-device-width: 480px)
     and (orientation: portrait) {
-        margin-left:1rem;
-        margin-right:1rem;
+        margin-left:none;
+        margin-right:none;
     }
 
 `
