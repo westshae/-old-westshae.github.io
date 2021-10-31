@@ -1,5 +1,5 @@
 {
-  "homepage": "http://westshae.github.io",
+  "homepage": "https://westshae.com",
   "name": "westshae.com",
   "version": "1.0",
   "private": true,
@@ -17,7 +17,7 @@
     "build": "DISABLE_ESLINT_PLUGIN=true react-scripts build",
     "test": "DISABLE_ESLINT_PLUGIN=true react-scripts test",
     "eject": "react-scripts eject",
-    "predeploy": "npm run build",
+    "predeploy": "yarn build",
     "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
