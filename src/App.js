@@ -4,7 +4,7 @@ import {HashRouter, Route, Switch, Redirect } from "react-router-dom";
 import Index from "./pages/index";
 import Java  from "./pages/java";
 import Python from "./pages/python";
-import Javascript from "./pages/javascript";
+import Javascript from "./pages/typescript";
 import Others from "./pages/others";
 
 const App = () =>{

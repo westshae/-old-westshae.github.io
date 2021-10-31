@@ -84,7 +84,7 @@ const Projects = (props) =>{
                 repos.map((repo, index)=>{
                     if(repo.archived){return;}
                     if(props.language !== "others"){if(repo.language !== props.language){return;}}
-                    else if(repo.language === "Java" || repo.language === "Python" || repo.language === "JavaScript"){return;}
+                    else if(repo.language === "Java" || repo.language === "Python" || repo.language === "JavaScript" || repo.language === "TypeScript"){return;}
                     
                     return(<Card name={repo.name} description={repo.description} link={repo.html_url} key={index}/>)
                 })

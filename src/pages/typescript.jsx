@@ -43,8 +43,9 @@ const Javascript = () =>{
             <Navigation/>
             <Content>
             <TextContainer>
-                    <Header>JavaScript</Header>
+                    <Header>TypeScript</Header>
                     <Paragraph>
+                        Note, since writing this, I've changed to using TypeScript rather than Javascript.
                         Javascript is quite-possibly my favourite programming language to date. With all my projects, I've always wanted to make them 
                         as accessible as I could, which often required designing them as a website.
                     </Paragraph>
@@ -54,6 +55,9 @@ const Javascript = () =>{
                         in the near future.
                     </Paragraph>
                 </TextContainer>
+                <Projects language="TypeScript"/>
+                <p/>
+                <Header>JavaScript</Header>
                 <Projects language="JavaScript"/>
             </Content>
             <Footer/>
