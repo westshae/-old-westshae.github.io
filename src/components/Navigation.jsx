@@ -86,6 +86,7 @@ const Navigation = () => {
     const javaRoute=()=>{history.push(`java`)}
     const javascriptRoute=()=>{history.push(`javascript`)}
     const othersRoute=()=>{history.push(`others`)}
+    const cppRoute=()=>{history.push(`cpp`)}
 
     return (
         <StyledNavigation>
@@ -94,8 +95,6 @@ const Navigation = () => {
                     <Button onClick={() => openInNewTab("https://github.com/westshae")}>Github</Button>
                     <Button onClick={() => openInNewTab("mailto:shaewest02@gmail.com")}>Email</Button>
                     <Button onClick={() => openInNewTab("https://discord.com/users/223993583617835009")}>Discord</Button>
-                    <Button onClick={() => openInNewTab("https://twitter.com/altoyadev")}>Twitter</Button>
-                    <Button onClick={() => openInNewTab("https://www.linkedin.com/in/shae-west-83a91b215/")}>LinkedIn</Button>
                 </Section>
                 <Section>
                     <Title onClick={indexRoute}>Shae West's Portfolio</Title>
@@ -104,6 +103,7 @@ const Navigation = () => {
                     <Button onClick={javascriptRoute}>Typescript</Button>
                     <Button onClick={pythonRoute}>Python</Button>
                     <Button onClick={javaRoute}>Java</Button>
+                    <Button onClick={cppRoute}>C++</Button>
                     <Button onClick={othersRoute}>Others</Button>
                 </Section>
             </MediaQuery>
